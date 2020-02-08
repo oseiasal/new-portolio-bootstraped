@@ -1,0 +1,69 @@
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background: black;
+
+        }
+
+        .jumbotron {
+            background-color: black;
+            /* Orange */
+            color: #ffffff;
+        }
+
+       
+        .bd-margin {
+            padding: 1.5rem;
+            margin-right: 0;
+            margin-left: 0;
+        }
+
+        .map-container {
+            overflow: hidden;
+            padding-bottom: 56.25%;
+            position: relative;
+            height: 0;
+        }
+
+        .map-container iframe {
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+
+        .bg-img  {
+            background: url(https://www.designerd.com.br/wp-content/uploads/2019/04/imagens-blogs-chamar-atencao-publico-3.jpg);
+            background-size: 67%;
+            background-position-x: 0px;
+            background-repeat: no-repeat;
+        }
+
+        @media (max-width: 500px) {
+            body {
+                height: 400px;
+            }
+
+           .bg-img {
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        }
+
+        @media (min-width: 501px) and (max-width: 1410px) {
+            body {
+                height: 600px;
+                background: black;
+
+            }
+
+           .bg-img {
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+
+        }
+
